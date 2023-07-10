@@ -1,0 +1,88 @@
+/* Navbar.module.css */
+
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.logoContainer {
+  margin-left: 10px;
+}
+
+.logo {
+  width: 40px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.navbarItems {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarItems li {
+  margin-right: 100px;
+}
+
+.navbarItems a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbarItems a:hover {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.signupButton a {
+  display: inline-block;
+padding: 12px 24px;
+background-color: #4caf50;
+color: white;
+text-align: center;
+text-decoration: none;
+border-radius: 24px;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.signinButton a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbarContainer {
+margin-top: 10px; /* Adjust the margin-top value as needed */
+}
+.button {
+display: inline-block;
+padding: 12px 24px;
+background-color: #4caf50;
+color: white;
+text-align: center;
+text-decoration: none;
+border-radius: 24px;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.button:hover {
+background-color: #45a049;
+}
