@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Navbar from '../components/common/NavBar';
 const SavedJobsPage = () => {
   const [savedJobs, setSavedJobs] = useState([]);
 
@@ -10,6 +10,7 @@ const SavedJobsPage = () => {
 
   return (
     <div>
+       <Navbar />
       <h1>Saved Jobs Page</h1>
       {savedJobs.length === 0 ? (
         <p>No saved jobs</p>
@@ -23,6 +24,15 @@ const SavedJobsPage = () => {
           </div>
         ))
       )}
+        <footer style={{ 
+        backgroundColor: '#f2f2f2',
+        padding: '20px',
+        marginTop: '800px',
+        textAlign: 'center',
+        
+      }}>
+        <p>© 2023 Your App. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

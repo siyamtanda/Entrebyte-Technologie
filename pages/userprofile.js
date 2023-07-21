@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Navbar from '../components/common/NavBar';
 const UserProfilePage = () => {
   const [user, setUser] = useState({
     username: 'example',
@@ -34,6 +34,7 @@ const UserProfilePage = () => {
 
   return (
     <div>
+       <Navbar />
       <h1>User Profile</h1>
       <form>
         <label>
@@ -86,6 +87,15 @@ const UserProfilePage = () => {
           </ul>
         )}
       </div>
+      <footer style={{ 
+        backgroundColor: '#f2f2f2',
+        padding: '20px',
+        marginTop: '800px',
+        textAlign: 'center',
+        
+      }}>
+        <p>© 2023 Your App. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

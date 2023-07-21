@@ -11,6 +11,7 @@ const Navbar = () => {
       alignItems: 'center',
       marginTop: '15px'
     }}>
+       
       <div className="logo" style={{ marginLeft: '10px' }}>
         <Image src="/images/logo1.png" alt="Logo" width={200} height={80} />
       </div>
@@ -21,6 +22,16 @@ const Navbar = () => {
         margin: 0,
         padding: 0
       }}>
+        <li style={{ marginRight: '100px' }}>
+          <Link href="/" passHref={true} legacyBehavior>
+            <a style={{ 
+              display: 'block',
+              color: '#000',
+              textDecoration: 'none',
+              fontSize: '20px'
+            }}>Home</a>
+          </Link>
+        </li>
         <li style={{ marginRight: '100px' }}>
           <Link href="/userprofile" passHref={true} legacyBehavior>
             <a style={{ 
@@ -64,7 +75,7 @@ const Navbar = () => {
               border: 'none',
               cursor: 'pointer',
               transition: 'background-color 0.3s ease',
-              marginRight: '10px' // Add margin-right to create space
+              marginRight: '50px' // Add margin-right to create space
             }}>Sign Up</a>
           </Link>
         </li>
@@ -80,7 +91,8 @@ const Navbar = () => {
               borderRadius: '24px',
               border: 'none',
               cursor: 'pointer',
-              transition: 'background-color 0.3s ease'
+              transition: 'background-color 0.3s ease',
+              marginRight: '50px'
             }}>Sign In</a>
           </Link>
         </li>

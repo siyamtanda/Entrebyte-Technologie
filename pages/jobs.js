@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ApplyModal from '../components/ApplyModal';
-
+import Navbar from '../components/common/NavBar';
 const JobsPage = () => {
 
   const [showApplyModal, setShowApplyModal] = useState(false);
@@ -64,6 +64,7 @@ const JobsPage = () => {
 
   return (
     <div>
+       <Navbar />
       <h1>Jobs Page</h1>
 
       <input type="text" value={searchTerm} onChange={handleSearchTermChange} placeholder="Search jobs" />
@@ -93,6 +94,15 @@ const JobsPage = () => {
           onSubmit={handleJobApplication}
         />
       )}
+      <footer style={{ 
+        backgroundColor: '#f2f2f2',
+        padding: '20px',
+        marginTop: '800px',
+        textAlign: 'center',
+        
+      }}>
+        <p>© 2023 Your App. All rights reserved.</p>
+      </footer>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Navbar from '../components/common/NavBar';
 
 export default function Home() {
   return (
-    <div style={{ overflowY: 'scroll', height: '100vh' }}>
+    <div >
       <Head>
         <title>My App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -56,7 +56,8 @@ export default function Home() {
         backgroundColor: '#f2f2f2',
         padding: '20px',
         marginTop: '50px',
-        textAlign: 'center'
+        textAlign: 'center',
+        MarginTop: 200
       }}>
         <p>© 2023 Your App. All rights reserved.</p>
       </footer>
